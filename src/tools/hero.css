@@ -1,0 +1,30 @@
+.heroDesktop {
+  background-image: url('../images/hero.png');
+  background-size: cover;
+  background-position: center;
+  display: none; /* Initially hide this */
+}
+
+.heroMobile {
+  background-image: url('../images/mobile_hero.png');
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 768px) {
+  .heroMobile {
+    display: block; /* Show on small screens */
+  }
+  .heroDesktop {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .heroDesktop {
+    display: block; /* Show on large screens */
+  }
+  .heroMobile {
+    display: none;
+  }
+}
