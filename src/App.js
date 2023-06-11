@@ -28,9 +28,10 @@ function App() {
   return (
     <>
       <Navigation />
-      <Routes>
+      {/* <Routes>
         <Route path="/" element={<Home />} />
-      </Routes>
+      </Routes> */}
+      <Home />
     </>
   );
 }

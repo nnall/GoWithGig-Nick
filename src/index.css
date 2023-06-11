@@ -18,14 +18,15 @@ body {
   display:flex;
   flex-direction: column;
   /* justify-content: center; */
-
-  border: .5px solid purple;
+  /* position:relative; */
   /* width:100%;
   margin:0px; */
 
  /* width: 100vw; */
 
 }
+
+
 
 
 
@@ -37,18 +38,37 @@ code {
 /********************* NAV BAR  *******************/
 
 .navbar{
-  border: 1px solid blue;
-  background-color:aquamarine;
+  border: 1px solid white;
+  background-color:rgb(52, 142, 112);
   margin-bottom:0px;
   border-radius: 0px;;
+  padding:0;
+  /* z-index: 50; */
+  /* position:static; */
 
+}
+
+
+.drawer{
+  background-color: rgb(52, 142, 112);
+}
+
+.dropdown{
+  margin-top:50px;
+  width:100%;
+  /* position:fixed; */
 }
 
 .drawer a{
   text-decoration: none;;
-  color: black;
+  color: rgb(255, 252, 252);
   font-size: 2em;
 
+}
+
+main{
+  border:2px solid yellow;
+  
 }
 
 
@@ -56,6 +76,7 @@ code {
 
 .hero__img{
   max-width:100%;
+  position:static;
 }
 
 .hero__blurb{
