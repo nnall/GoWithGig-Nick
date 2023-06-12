@@ -1,8 +1,11 @@
 import React, { useState } from "react";
-import logo from "../images/carLogo.svg";
+// import { icon } from "@fortawesome/free-solid-svg-icons";
+import logo from "../images/logo.svg";
 // import { createRoot } from "react-dom/client";
 import { createRoot } from "react-dom/client";
 import { ReactSVG } from "react-svg";
+
+// import carLogo from "../images/carLogo.svg";
 
 import {
   MDBContainer,
@@ -19,29 +22,24 @@ export default function Navigation() {
 
   return (
     <>
-      <MDBNavbar className="position-fixed d-flex align-items-center">
-        <MDBContainer fluid>
-          <Link className="z-100 navbar-brand align-self-start" href="#">
-            <ReactSVG
-              className="logo"
-              src={logo}
-              // style={{ height: "100px", width: "300px" }}
-            />
-            {/* <img style={(scale = ".5")} className="" src={logo} alt=""></img> */}
-          </Link>
+      <MDBNavbar className="navbar position-fixed rounded-0 d-flex justify-content-start align-items-center p-3">
+        {/* <MDBContainer fluid className="container-lg"> */}
+        <Link className="z-100 navbar-brand align-self-start" href="#">
+          <img src={logo} alt="logo" />
+        </Link>
 
-          <MDBNavbarToggler
-            className=""
-            type="button"
-            data-target="#navbarToggleExternalContent"
-            aria-controls="navbarToggleExternalContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-            onClick={() => setShowNavExternal3(!showNavExternal3)}
-          >
-            <MDBIcon icon="bars" />
-          </MDBNavbarToggler>
-        </MDBContainer>
+        <MDBNavbarToggler
+          className="bg-light ms-auto"
+          type="button"
+          data-target="#navbarToggleExternalContent"
+          aria-controls="navbarToggleExternalContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          onClick={() => setShowNavExternal3(!showNavExternal3)}
+        >
+          <MDBIcon className="navbar-toggler-icon bg-light" icon="bars" />
+        </MDBNavbarToggler>
+        {/* </MDBContainer> */}
       </MDBNavbar>
 
       <MDBCollapse show={showNavExternal3} className="position-fixed dropdown">

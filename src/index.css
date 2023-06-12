@@ -4,11 +4,11 @@
   box-sizing: border-box;
 }
 
-
-
+html{
+  width: 100%;
+}
 
 body {
-
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -18,9 +18,9 @@ body {
   display:flex;
   flex-direction: column;
   height: 500px;
+  position:relative;
 
- width: 100vw;
- background-color:pink;
+ width: 100%;
  border: 1px solid hotpink;
 
 }
@@ -33,18 +33,17 @@ code {
 /********************* NAV BAR  *******************/
 
 .navbar{
-  border: 1px solid red;
   background-color:rgb(52, 142, 112);
-  margin-bottom:0px;
-  border-radius: 0px;;
-  padding:0;
-
+  width:100%;
+  
 }
 
 .navbar-toggler{
   display:inline-block;
-  border: 1px solid black;
-  fill: red;
+}
+
+.navbar-toggler:hover{
+  border-color: white;
 }
 
 
@@ -53,16 +52,19 @@ code {
 }
 
 .dropdown{
-  margin-top:62px;
+  margin-top:72px;
   width:100%;
-  /* position:fixed; */
 }
 
 .navbar a{
   border: 1px solid black;
   justify-self:flex-start;
+  display:flex;
+  justify-content: center;;
+  align-items: center;;
   
 }
+
 
 .drawer a{
   text-decoration: none;;
@@ -77,11 +79,12 @@ main{
 }
 
 .logo{
-  transform:scale(.25);
+  /* transform:scale(.25); */
   color:blue;
-  
-
 }
+
+
+
 
 
 /********************* HERO  *******************/
