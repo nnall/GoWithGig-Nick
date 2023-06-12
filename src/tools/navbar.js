@@ -19,7 +19,7 @@ export default function Navigation() {
 
   return (
     <>
-      <MDBNavbar className="position-fixed d-flex align-items-center w-auto">
+      <MDBNavbar className="position-fixed d-flex align-items-center">
         <MDBContainer fluid>
           <Link className="z-100 navbar-brand align-self-start" href="#">
             <ReactSVG

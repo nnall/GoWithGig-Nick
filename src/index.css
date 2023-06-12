@@ -17,20 +17,13 @@ body {
 
   display:flex;
   flex-direction: column;
-  /* justify-content: center; */
-  /* position:relative; */
-  /* width:100%;
-  margin:0px; */
+  height: 500px;
 
  width: 100vw;
  background-color:pink;
  border: 1px solid hotpink;
 
 }
-
-
-
-
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -40,13 +33,11 @@ code {
 /********************* NAV BAR  *******************/
 
 .navbar{
-  border: 1px solid white;
+  border: 1px solid red;
   background-color:rgb(52, 142, 112);
   margin-bottom:0px;
   border-radius: 0px;;
   padding:0;
-  /* display: flex; */
-
 
 }
 
