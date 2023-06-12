@@ -28,10 +28,10 @@ function App() {
   return (
     <>
       <Navigation />
-      {/* <Routes>
+      <Routes>
         <Route path="/" element={<Home />} />
-      </Routes> */}
-      <Home />
+      </Routes>
+      {/* <Home /> */}
     </>
   );
 }

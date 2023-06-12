@@ -48,6 +48,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "mdb-react-ui-kit": "^6.1.0"
+    "mdb-react-ui-kit": "^6.1.0",
+    "react-svg": "^16.1.16"
   }
 }

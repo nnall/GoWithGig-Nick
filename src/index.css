@@ -22,7 +22,9 @@ body {
   /* width:100%;
   margin:0px; */
 
- /* width: 100vw; */
+ width: 100vw;
+ background-color:pink;
+ border: 1px solid hotpink;
 
 }
 
@@ -43,9 +45,15 @@ code {
   margin-bottom:0px;
   border-radius: 0px;;
   padding:0;
-  /* z-index: 50; */
-  /* position:static; */
+  /* display: flex; */
 
+
+}
+
+.navbar-toggler{
+  display:inline-block;
+  border: 1px solid black;
+  fill: red;
 }
 
 
@@ -54,9 +62,15 @@ code {
 }
 
 .dropdown{
-  margin-top:50px;
+  margin-top:62px;
   width:100%;
   /* position:fixed; */
+}
+
+.navbar a{
+  border: 1px solid black;
+  justify-self:flex-start;
+  
 }
 
 .drawer a{
@@ -68,7 +82,14 @@ code {
 
 main{
   border:2px solid yellow;
+
+}
+
+.logo{
+  transform:scale(.25);
+  color:blue;
   
+
 }
 
 
