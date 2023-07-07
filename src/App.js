@@ -26,13 +26,14 @@ import Signup from "./onboard/signup.js";
 
 function App() {
   return (
-    <>
+    <div className="app">
       <Navigation />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
       </Routes>
+      <Footer />
       {/* <Home /> */}
-    </>
+    </div>
   );
 }
 

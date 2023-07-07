@@ -6,14 +6,13 @@ import Contact from "../tools/contactus";
 
 function Home() {
   return (
-    <>
-      {/*<HeroImage />
-       <CardHome />
+    <div className="home">
+      <HeroImage />
+      <CardHome />
       <h2 className="text-center mt-0">See What Everyone Is Saying</h2>
       <ReviewCard />
       <Contact />
-      <Footer />  */}
-    </>
+    </div>
   );
 }
 
