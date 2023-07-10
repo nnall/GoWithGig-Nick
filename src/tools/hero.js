@@ -7,6 +7,38 @@ import { Link } from "react-router-dom";
 // console.log(blurb);
 
 export default function HeroImage() {
+  const [isHovered, setIsHovered] = useState(false);
+  const [isClicked, setIsClicked] = useState(false);
+
+  const handleMouseOver = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
+  const handleIsClicked = () => {
+    setIsClicked(true);
+  };
+
+  const handleIsUnclicked = () => {
+    setIsClicked(false);
+  };
+
+  // function changeSize(e) {
+  //   // console.log(e.target);
+  //   e.target.style.cssText = `transform : scale(1.2);
+
+  //     `;
+  // }
+  // function changeSizeBack(e) {
+  //   // console.log(e.target);
+  //   e.target.style.cssText = `transform : scale(1);
+
+  //     `;
+  // }
+
   // console.log(blurb);win
   useEffect(() => {
     function resize() {
@@ -43,7 +75,17 @@ export default function HeroImage() {
         <h1>GoWithGIG</h1>
         <h4>Douglasville, Georigia</h4>
         <h4>Taylorsville, Utah</h4>
-        <Link to="/reservation">Find Your Ride Now!</Link>
+        <div
+          className={`link-wrapper ${isHovered ? "hovered" : ""} ${
+            isClicked ? "onClick" : ""
+          }`}
+          onMouseOver={handleMouseOver}
+          onMouseLeave={handleMouseLeave}
+          onMouseDown={handleIsClicked}
+          onMouseUp={handleIsUnclicked}
+        >
+          <Link to="/reservation">Find Your Ride Now!</Link>
+        </div>
       </div>
       {/* </div> */}
       {/* HERO TEXT BLURB */}

@@ -15,7 +15,6 @@ export default function Logo() {
       xml:space="preserve"
     >
       <path
-        fill="#000000"
         opacity="1.000000"
         stroke="none"
         d="

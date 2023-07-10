@@ -17,6 +17,10 @@ import {
 
 import { Link } from "react-router-dom";
 
+// root{
+
+// }
+
 export default function Navigation() {
   const [showNavExternal3, setShowNavExternal3] = useState(false);
   const navbarRef = useRef(null);
@@ -53,7 +57,7 @@ export default function Navigation() {
         {/* <MDBContainer fluid className="container-lg"> */}
         <Link className="z-100 navbar-brand align-self-start" to="#">
           {/* <img src={logo} alt="logo"></img> */}
-          <ReactSVG src={logo} />
+          <ReactSVG className="nav-svg" src={logo} />
           {/* <Logo /> */}
         </Link>
 
@@ -65,10 +69,15 @@ export default function Navigation() {
           aria-expanded="false"
           aria-label="Toggle navigation"
           onClick={toggleCollapse}
+          onHover={{ backgroundColor: "#f4ce88" }}
 
           // style={{ height: maxContent }}
         >
-          <MDBIcon className="navbar-toggler-icon" icon="bars" />
+          <MDBIcon
+            className="navbar-toggler-icon"
+            icon="bars"
+            onHover={{ backgroundColor: "#f4ce88" }}
+          />
         </MDBNavbarToggler>
         {/* </MDBContainer> */}
       </MDBNavbar>
@@ -84,7 +93,6 @@ export default function Navigation() {
               Login
             </button>
           </Link>
-
           <Link to="#" onClick={handleLinkClick}>
             <button className="btn btn-primary d-block rounded-0 p-4">
               Signup
@@ -92,7 +100,22 @@ export default function Navigation() {
           </Link>
           <Link to="#" onClick={handleLinkClick}>
             <button className="btn btn-primary d-block rounded-0 p-4">
+              Rent Now
+            </button>
+          </Link>
+          <Link to="#" onClick={handleLinkClick}>
+            <button className="btn btn-primary d-block rounded-0 p-4">
+              Check Vehicle Availabilty
+            </button>
+          </Link>
+          <Link to="#" onClick={handleLinkClick}>
+            <button className="btn btn-primary d-block rounded-0 p-4">
               Learn more
+            </button>
+          </Link>
+          <Link to="#" onClick={handleLinkClick}>
+            <button className="btn btn-primary d-block rounded-0 p-4">
+              Logout
             </button>
           </Link>
         </div>

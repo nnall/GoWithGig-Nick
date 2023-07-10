@@ -1,0 +1,134 @@
+
+/* NOTE: HeroImage styling located in index.css */
+:root{
+    --large: 2.25em;
+    --medium: 1.7em;
+    --small: 1.2em;
+}
+
+header {
+    margin: 0;
+}
+
+/********************* HERO  *******************/
+
+
+
+.hero__blurb-inner {
+    position: absolute;
+    transform-origin: top left;
+    transform: rotate(-15deg);
+    font-weight: bold;
+    left: 45%;
+    margin-top: -83%;
+    min-width: 250px;
+    padding: 3rem;
+    font-size: 1.2em;
+    box-shadow: 10px 10px 10px #00000094;
+    background-color: var(--HMYellow-lite);
+    z-index: 10;
+    overflow: visible;
+}
+
+
+.hero__blurb-inner a {
+    font-size: 2em;
+    transition: .2s ease-in;
+}
+
+
+h1 {
+    font-size: 3rem !important;
+    font-family: 'Nexa Bold Regular', sans-serif !important;
+}
+
+h1,
+h4 {
+    font-weight: 500 !important;
+}
+
+h1 {
+
+    padding-bottom: 1rem;
+}
+
+h5 {
+    font-size: var(--large)!important;
+    color: var(--DarkText) !important;
+}
+
+/* single_card Styling */
+
+.cardHome {
+    margin: 0;
+    max-width: 100%;
+    background-color: yellow;
+    border: 4px solid pink;
+}
+
+
+.home {
+    margin: 0;
+    /* border: 3px solid red; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+}
+/* margin-bottom every child of .home except last */
+.home>* > *:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+.hero__img {
+    max-width: 100%;
+    margin-bottom: 1rem;
+}
+
+.about{
+    padding: 2rem;
+}
+
+h2{
+    font-size: 2.5em !important;
+    font-weight: 700 !important;
+    line-height: 1.4 !important;
+    text-transform:capitalize;
+    margin-left:2rem;
+}
+
+.about p{
+    padding: 1.75rem;
+    font-size: 1.6em;
+    line-height:2;
+
+}
+/* REVIEWCARD */
+
+.icons > *{
+    border: 1px solid blue;
+}
+
+h4{
+    font-size: 1.6em !important;
+}
+
+.testimonial{
+    font-size: 1.5em;
+    line-height: 2
+}
+
+.front-face img{
+    display:inline-block !important;
+    width:70% !important;
+    /* border: 1px solid red; */
+}
+.front-face div{
+    font-size: 2em;
+    margin-bottom: 1rem;
+}
+
+.about >*{
+    width:100% !important;
+}
