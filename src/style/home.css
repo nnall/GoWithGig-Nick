@@ -21,7 +21,7 @@ header {
     font-weight: bold;
     left: 45%;
     margin-top: -83%;
-    min-width: 250px;
+    /* min-width: 60%; */
     padding: 3rem;
     font-size: 1.2em;
     box-shadow: 10px 10px 10px #00000094;
@@ -131,4 +131,33 @@ h4{
 
 .about >*{
     width:100% !important;
+}
+
+.link-wrapper {
+    transition: var(--transition);
+    margin-top: 20%;
+    margin-bottom: 10%;
+    white-space: nowrap;
+}
+
+.link-wrapper a {
+    margin: 0;
+    padding: 0;
+}
+
+.link-wrapper.hovered {
+    transform: scale(1.2);
+    color: rgb(52, 142, 112);
+}
+
+.link-wrapper.onClick {
+    transform: scale(1);
+    color: var(--HMYellow);
+}
+
+
+
+.link-wrapper.hovered a {
+    color: rgb(52, 142, 112);
+    font-weight: bolder;
 }

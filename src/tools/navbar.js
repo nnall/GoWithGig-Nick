@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 
-import logo from "../images/GigCar.svg";
+import logo from "../images/go-with-gig-logo.svg";
 import { createRoot } from "react-dom/client";
 import { ReactSVG } from "react-svg";
 
@@ -57,7 +57,11 @@ export default function Navigation() {
         {/* <MDBContainer fluid className="container-lg"> */}
         <Link className="z-100 navbar-brand align-self-start" to="#">
           {/* <img src={logo} alt="logo"></img> */}
-          <ReactSVG className="nav-svg" src={logo} />
+          <svg
+            className="nav-svg"
+            src={logo}
+            style={{ fill: "white", color: "white" }}
+          />
           {/* <Logo /> */}
         </Link>
 
@@ -115,7 +119,7 @@ export default function Navigation() {
           </Link>
           <Link to="#" onClick={handleLinkClick}>
             <button className="btn btn-primary d-block rounded-0 p-4">
-              Logout
+              Log out
             </button>
           </Link>
         </div>
